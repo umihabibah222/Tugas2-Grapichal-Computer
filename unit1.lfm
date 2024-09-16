@@ -1,0 +1,283 @@
+object FormMenuMakanan: TFormMenuMakanan
+  Left = 31
+  Height = 472
+  Top = 161
+  Width = 635
+  Caption = 'Form Menu Makanan'
+  ClientHeight = 472
+  ClientWidth = 635
+  Color = 16744576
+  LCLVersion = '3.4.0.0'
+  object nasiRadioGroup: TRadioGroup
+    Left = 8
+    Height = 105
+    Top = 56
+    Width = 152
+    AutoFill = True
+    Caption = 'Nasi'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ParentBackground = False
+    TabOrder = 0
+  end
+  object nasiPutih: TRadioButton
+    Left = 16
+    Height = 19
+    Top = 80
+    Width = 46
+    Caption = 'Putih'
+    TabOrder = 1
+    OnChange = nasiPutihChange
+  end
+  object nasiUduk: TRadioButton
+    Left = 16
+    Height = 19
+    Top = 104
+    Width = 46
+    Caption = 'Uduk'
+    TabOrder = 2
+    OnChange = nasiUdukChange
+  end
+  object nasiKuning: TRadioButton
+    Left = 16
+    Height = 19
+    Top = 128
+    Width = 56
+    Caption = 'Kuning'
+    TabOrder = 3
+    OnChange = nasiKuningChange
+  end
+  object nasiLiwet: TRadioButton
+    Left = 88
+    Height = 19
+    Top = 80
+    Width = 46
+    Caption = 'Liwet'
+    TabOrder = 4
+    OnChange = nasiLiwetChange
+  end
+  object nasiGoreng: TRadioButton
+    Left = 88
+    Height = 19
+    Top = 104
+    Width = 57
+    Caption = 'Goreng'
+    TabOrder = 5
+    OnChange = nasiGorengChange
+  end
+  object EditHargaNasi: TEdit
+    Left = 224
+    Height = 23
+    Top = 100
+    Width = 144
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 147
+    Height = 25
+    Top = 16
+    Width = 230
+    Caption = 'PILIH MENU MAKNANAN'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 22
+    Top = 176
+    Width = 89
+    Caption = 'MINUMAN'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = '@Microsoft YaHei'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object minumComboBox: TComboBox
+    Left = 104
+    Height = 23
+    Top = 176
+    Width = 100
+    ItemHeight = 15
+    Items.Strings = (
+      'Air Mineral'
+      'Es Teh Manis'
+      'Es Jeruk'
+      'Teh Manis Anget'
+      'Es Teh Tawar'
+      'Es Kopi'
+      ''
+    )
+    TabOrder = 7
+    OnChange = minumComboBoxChange
+  end
+  object HargaMinuman: TEdit
+    Left = 224
+    Height = 23
+    Top = 175
+    Width = 144
+    TabOrder = 8
+  end
+  object laukCheckGroup: TCheckGroup
+    Left = 8
+    Height = 185
+    Top = 208
+    Width = 185
+    AutoFill = True
+    Caption = 'Lauk'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ParentBackground = False
+    TabOrder = 9
+  end
+  object dagingCheck: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 232
+    Width = 56
+    Caption = 'Daging'
+    TabOrder = 10
+    OnChange = dagingCheckChange
+  end
+  object ayamCheck: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 264
+    Width = 49
+    Caption = 'Ayam'
+    TabOrder = 11
+    OnChange = ayamCheckChange
+  end
+  object ikanCheck: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 296
+    Width = 40
+    Caption = 'Ikan'
+    TabOrder = 12
+    OnChange = ikanCheckChange
+  end
+  object tahuCheck: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 328
+    Width = 44
+    Caption = 'Tahu'
+    TabOrder = 13
+    OnChange = tahuCheckChange
+  end
+  object tempeCheck: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 360
+    Width = 54
+    Caption = 'Tempe'
+    TabOrder = 14
+    OnChange = tempeCheckChange
+  end
+  object HargaDaging: TEdit
+    Left = 224
+    Height = 23
+    Top = 232
+    Width = 144
+    TabOrder = 15
+    OnChange = HargaDagingChange
+  end
+  object HargaAyam: TEdit
+    Left = 224
+    Height = 23
+    Top = 264
+    Width = 144
+    TabOrder = 16
+  end
+  object HargaIkan: TEdit
+    Left = 224
+    Height = 23
+    Top = 296
+    Width = 144
+    TabOrder = 17
+    OnChange = HargaIkanChange
+  end
+  object HargaTahu: TEdit
+    Left = 224
+    Height = 23
+    Top = 328
+    Width = 144
+    TabOrder = 18
+  end
+  object HargaTempe: TEdit
+    Left = 224
+    Height = 23
+    Top = 360
+    Width = 144
+    TabOrder = 19
+  end
+  object Total: TLabel
+    Left = 88
+    Height = 25
+    Top = 400
+    Width = 103
+    Caption = 'Total Harga'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = TotalClick
+  end
+  object TotalHarga: TEdit
+    Left = 224
+    Height = 23
+    Top = 403
+    Width = 144
+    TabOrder = 20
+    OnChange = TotalHargaChange
+  end
+  object ButtonTampil: TButton
+    Left = 392
+    Height = 25
+    Top = 403
+    Width = 75
+    Caption = 'Print'
+    TabOrder = 21
+    OnClick = ButtonTampilClick
+  end
+  object ButtonKeluar: TButton
+    Left = 536
+    Height = 25
+    Top = 403
+    Width = 75
+    Caption = 'Keluar'
+    TabOrder = 22
+    OnClick = ButtonKeluarClick
+  end
+  object HasilPrint: TMemo
+    Left = 392
+    Height = 217
+    Top = 175
+    Width = 232
+    Lines.Strings = (
+      ''
+    )
+    TabOrder = 23
+  end
+end
